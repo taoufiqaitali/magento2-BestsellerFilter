@@ -1,0 +1,32 @@
+{
+    "name": "taoufiqaitali/bestsellerfilter",
+    "description": "Magento 2 custom module to add custom best seller filter to product list toolbar",
+    "require": {
+        "magento/framework": "~100.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.1",
+    "authors": [
+        {
+            "name": "Taoufiq Ait Ali",
+            "email": "tsdi.23a@gmail.com"
+        }
+    ],
+    "license": [
+        "proprietary"
+    ],
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Taoufiqaitali\\BestsellerFilter\\": ""
+        }
+    },
+	"extra": {
+        "map": [
+            [
+                "*",
+                "taoufiqaitali/BestsellerFilter"
+            ]
+        ]
+    }
+}
