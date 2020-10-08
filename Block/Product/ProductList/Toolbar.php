@@ -15,11 +15,6 @@ class Toolbar extends \Magento\Catalog\Block\Product\ProductList\Toolbar
                 ->order('qty_ordered '.$this->getCurrentDirectionReverse());
         }
 
-        if($this->getCurrentOrder()=="featured")
-        {
-              $collection->getSelect()->orderRand();
-        }
-
         $this->_collection = $collection;
         $this->_collection->setCurPage($this->getCurrentPage());
 
